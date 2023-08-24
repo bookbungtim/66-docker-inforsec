@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: my-db
+    ports:
+      - 54321:5432
+    environment:
+      - POSTGRES_USER=bookbungtim3
+      - POSTGRES_PASSWORD=book15963
+#  pg-admin:
+#    image: dpage/pgadmin4:latest
+#    container_name: pg-admin
