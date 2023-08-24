@@ -7,8 +7,5 @@ services:
     ports:
       - 54321:5432
     environment:
-      - POSTGRES_USER=bookbungtim3
-      - POSTGRES_PASSWORD=book15963
-#  pg-admin:
-#    image: dpage/pgadmin4:latest
-#    container_name: pg-admin
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
