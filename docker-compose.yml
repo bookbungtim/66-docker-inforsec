@@ -18,8 +18,8 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
-  strapi:
-    image: naskio/strapi:latest
+  myapp:
+    image: bookbungtim/my-app:1.0.1
     container_name: my-app-ced
     ports:
       - 1337:1337
