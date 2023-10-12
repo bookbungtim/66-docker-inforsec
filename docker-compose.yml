@@ -19,7 +19,8 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
   strapi:
-    image: bookbungtim/app:1.1.0
+    image: bookbungtim/app:latest
+    build: .
     container_name: my-app-ced
     ports:
       - 1337:1337
